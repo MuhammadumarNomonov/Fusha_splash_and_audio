@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Scroll ichiga joylanadi -->
+    <ScrollView
+        android:id="@+id/scrollArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nextLessonButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Barakalla sarlavha -->
+            <TextView
+                android:id="@+id/congratsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barakalla!\nSiz muvaffaqiyatli tugatdingiz!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="24dp" />
+
+            <!-- Bola rasmi -->
+            <ImageView
+                android:id="@+id/kidImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/img_1"
+                android:outlineProvider="background" />
+
+            <!-- Arab tili haqida matn -->
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arab tili — Islom madaniyatining asosi bo‘lib, Qur'on Karim aynan shu tilda nozil qilingan. Bu til 28 ta harfdan iborat bo‘lib, har bir harf o‘ziga xos tovushga ega. Dunyoda 400 milliondan ortiq insonlar arab tilida so‘zlashadi. Arab tili nafaqat diniy bilimlar, balki tarix, falsafa, ilm-fan, adabiyot va she'riyat tillaridan biri hisoblanadi.\n\nBu tilni o‘rganish orqali siz nafaqat Qur'on oyatlarini asl holida tushunishga yaqinlashasiz, balki boy arab madaniyati va bilim olamiga ham qadam qo‘yasiz. Arabcha so‘zlar ko‘p hollarda boshqa tillarga ham kirib kelgan bo‘lib, ularni o‘rganish orqali siz lug‘at boyligingizni oshirasiz."
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Pastdagi 'Keyingi dars' tugmasi -->
+    <Button
+        android:id="@+id/nextLessonButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Keyingi dars"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#58BE9B"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

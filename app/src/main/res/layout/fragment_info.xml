@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#A0F3FD"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".fragments.InfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📘 Qo‘llanma\n\nIlovamizdan to‘liq va sifatli foydalanish uchun quyidagi tavsiyalarga amal qiling:\n\n📱 Qorong‘i rejimni o‘chiring:\nTelefoningiz yuqori menyusida qorong‘i (Dark Mode) rejimini o‘chirib qo‘ying. Bu ilova dizaynining to‘g‘ri ko‘rinishi va matnlarning aniq o‘qilishi uchun muhim.\n\n🔊 Google Speech Service:\nQurilmangizda “Speech Service by Google” ilovasi o‘rnatilganligini tekshirib oling. Bu sizga darslardagi audio va talaffuz funksiyalarining to‘g‘ri ishlashiga yordam beradi.\n\n📐 Vertikal holatda foydalaning:\nIlova faqat tik (vertikal) holatda to‘g‘ri ishlaydi. Telefoningizni tekis ushlab, darslarni qulay va samarali tarzda o‘zlashtirishingiz mumkin.\n\nSifatli ta’lim — to‘g‘ri sozlamalardan boshlanadi. Fusha ilovasi sizga eng yaxshi tajribani taqdim etishi uchun ushbu qadamlarni unutmang."
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="center"
+            android:textStyle="normal" />
+    </LinearLayout>
+</ScrollView>

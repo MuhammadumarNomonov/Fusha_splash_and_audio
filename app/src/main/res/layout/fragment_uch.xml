@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sarlavha card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#43A047">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/book"
+                    android:contentDescription="Dars ikonkasi"/>
+
+                <TextView
+                    android:id="@+id/tvLessonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="📖 3-dars: Madd Muttasil va Madd Munfasil"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Matn card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLessonContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:text="🔹 Madd Muttasil\n\nMadd muttasil degani — agar cho‘ziladigan harf (ا, و, ي)dan keyin hamza (ء) bitta so‘zning ichida kelsa, biz uni cho‘zib o‘qiymiz. Mad Muttasil 4 yoki 5 harakat miqdoricha cho`zib o`qiladi.\n\n📌 Misollar:\n- جَاءَ (jaa-a)\n- سماء (samaa)\n\n\n🔹 Madd Munfasil\n\nMadd munfasil degani — agar cho‘ziladigan harf birinchi so‘z oxirida kelsa, keyingi so‘z boshida esa hamza bo‘lsa, biz ham uni cho‘zib o‘qiymiz.Mad munfasilni 2 harakat miqdoricha hamda 4 harakat miqdoricha chozib o’qish mumkin..\n\n📌 Misollar:\n- فِيٓ أَنفُسِكُم (fii anfusikum)\n- إِنَّآ أَعْطَيْنَاكَ (innaa a‘toynaa-ka)\n\n👉 Xulosa: Madd Muttasil bitta so‘z ichida bo‘ladi, Madd Munfasil esa ikki so‘z orasida bo‘ladi. Ikkalasi ham cho‘zib o‘qiladi."
+                    android:textColor="#212121"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Oddiy Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔊 Darsni tinglash"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:backgroundTint="#43A047"
+                android:textColor="#FFFFFF"/>
+
+            <ImageButton
+                android:id="@+id/btnNext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#43A047"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/keyingi_ic2"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

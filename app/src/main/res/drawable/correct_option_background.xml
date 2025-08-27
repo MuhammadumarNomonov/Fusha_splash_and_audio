@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#3300FF00" /> <!-- Shaffof yashil -->
+    <stroke
+        android:width="2dp"
+        android:color="#00CC66" /> <!-- Yashil border -->
+    <corners android:radius="12dp" />
+</shape>

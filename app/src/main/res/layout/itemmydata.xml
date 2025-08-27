@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <View
+        android:id="@+id/time2"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/salom_2" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/timeline_2"
+        />
+
+    <!-- Chiziq (faqat pastga o'sadi) -->
+
+    <View
+        android:id="@+id/timeline_line"
+        android:layout_width="5dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/salom_2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BEECDE"
+            android:padding="16dp">
+
+            <!-- Ikonka -->
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_bg"
+                android:padding="6dp"
+                android:src="@drawable/men22" />
+
+            <!-- Dars nomi -->
+            <TextView
+                android:id="@+id/lessontitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="14dp"
+                android:layout_alignTop="@id/icon"
+                android:text="Noun Quiz"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- Progress -->
+            <TextView
+                android:id="@+id/lessonprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/icon"
+                android:layout_marginStart="14dp"
+                android:layout_below="@id/lessontitle"
+                android:text="8/10"
+                android:textColor="#777"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

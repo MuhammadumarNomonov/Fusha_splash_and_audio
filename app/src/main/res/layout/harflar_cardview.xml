@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/card_border"
+    android:padding="2dp"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="93dp"
+        android:layout_height="116dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="4dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/arabicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ا"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#3C9B7B"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/uzbekText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alif"
+                android:textSize="20sp"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/voiceIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/voice"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

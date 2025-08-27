@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3E5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sarlavha card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#FB528C">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/book"
+                    android:contentDescription="Dars ikonkasi"
+                     />
+
+                <TextView
+                    android:id="@+id/tvLessonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text=" 2-dars: Madd tabi‘iy"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Matn card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvLessonContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="#212121"
+                    android:text="Madd tabi‘iy — eng oddiy cho‘zish bo‘lib, 2 harakat davom etadi.\n\n📌 Sharti:\n- Harfi madd (ا، و، ي)\n- Oldidan mos harakat:\n  • Fath + Alif → قَالَ\n  • Domma + Vov → يَقُولُ\n  • Kasra + Ya → قِيلَ\n\n👉 Bu hollarda harfni ikki harakat cho‘zib o‘qish kerak.\n\n🔊 Qur’ondan misollar:\n- قَالَ\n- يَقُولُ\n- قِيلَ"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Audio button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnPlayAudio"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:backgroundTint="#7E57C2"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/play_circle"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Darsni tinglash"
+                app:tint="#2196F3" />
+
+            <ImageButton
+                android:id="@+id/btnNext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FB528C"
+                android:layout_marginStart="45dp"
+                android:src="@drawable/keyingi_ic2"
+                app:tint="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

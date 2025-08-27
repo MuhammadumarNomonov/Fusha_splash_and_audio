@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynavigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fusha.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_darslarFragment"
+            app:destination="@id/darslarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sozlarFragment"
+            app:destination="@id/sozlarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_qoidaFragment"
+            app:destination="@id/qoidaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_restartFragment"
+            app:destination="@id/restartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/darslarFragment"
+        android:name="com.example.fusha.fragments.DarslarFragment"
+        android:label="fragment_darslar"
+        tools:layout="@layout/fragment_darslar" >
+        <action
+            android:id="@+id/action_darslarFragment_to_harflarFragment"
+            app:destination="@id/harflarFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_sinovFragment"
+            app:destination="@id/sinovFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_harflartuzilishi"
+            app:destination="@id/harftuzilishi" />
+        <action
+            android:id="@+id/action_darslarFragment_to_sozlarningoqilishiFragment"
+            app:destination="@id/sozlarningoqilishiFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_ZAFragment"
+            app:destination="@id/ZAFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_mimFragment"
+            app:destination="@id/mimFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_TAFragment"
+            app:destination="@id/TAFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_naFragment"
+            app:destination="@id/naFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_yaFragment"
+            app:destination="@id/yaFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_baFragment"
+            app:destination="@id/baFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_kaFragment"
+            app:destination="@id/kaFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_kaFragment2"
+            app:destination="@id/kaFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_lamFragment"
+            app:destination="@id/lamFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_wawFragment"
+            app:destination="@id/wawFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_ymHaFragment"
+            app:destination="@id/HaFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_faFragment"
+            app:destination="@id/faFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_qoFragment"
+            app:destination="@id/qoFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_shiynFragment"
+            app:destination="@id/shiynFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_siynFragment"
+            app:destination="@id/siynFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_thinFragment"
+            app:destination="@id/thinFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_sodFragment"
+            app:destination="@id/sodFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_toFragment"
+            app:destination="@id/toFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_jimFragment"
+            app:destination="@id/jimFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_xooFragment"
+            app:destination="@id/xooFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_haaFragment"
+            app:destination="@id/haaFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_gooFragment"
+            app:destination="@id/gooFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_aynFragment"
+            app:destination="@id/aynFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_dalFragment"
+            app:destination="@id/dalFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_doodFragment"
+            app:destination="@id/doodFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_zaaalFragment"
+            app:destination="@id/zaaalFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_zooFragment"
+            app:destination="@id/zooFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_kaFragment3"
+            app:destination="@id/kaFragment" />
+
+        <action
+            android:id="@+id/action_darslarFragment_to_boshlangichTestFragment"
+            app:destination="@id/boshlangichTestFragment" />
+
+
+        <action
+            android:id="@+id/action_darslarFragment_to_muammoTestFragment"
+            app:destination="@id/muammoTestFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_ortaTestFragment"
+            app:destination="@id/ortaTestFragment" />
+        <action
+            android:id="@+id/action_darslarFragment_to_test3Fragment"
+            app:destination="@id/test3Fragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/sozlarFragment"
+        android:name="com.example.fusha.mad_chozish.SozlarFragment"
+        android:label="fragment_sozlar"
+        tools:layout="@layout/fragment_sozlar" >
+        <action
+            android:id="@+id/action_sozlarFragment_to_birFragment"
+            app:destination="@id/birFragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_ikkiFragment"
+            app:destination="@id/ikkiFragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_uchFragment"
+            app:destination="@id/uchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fusha.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.fusha.fragments.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/qoidaFragment"
+        android:name="com.example.fusha.fragments.QoidaFragment"
+        android:label="fragment_qoida"
+        tools:layout="@layout/fragment_qoida" />
+    <fragment
+        android:id="@+id/harflarFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.HarflarFragment"
+        android:label="fragment_harflar"
+        tools:layout="@layout/fragment_harflar" >
+        <action
+            android:id="@+id/action_harflarFragment_to_hcompleteFragment"
+            app:destination="@id/hcompleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sinovFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.SinovFragment"
+        android:label="fragment_sozlar2"
+        tools:layout="@layout/fragment_sinov" >
+        <action
+            android:id="@+id/action_sinovFragment_to_kalimaFragment"
+            app:destination="@id/harftuzilishi" />
+        <action
+            android:id="@+id/action_sinovFragment_to_harftuzilishi"
+            app:destination="@id/harftuzilishi" />
+    </fragment>
+    <fragment
+        android:id="@+id/harftuzilishi"
+        android:name="com.example.fusha.Darslar_fragment_child.HarftuzilishiFragment"
+        android:label="fragment_kalima"
+        tools:layout="@layout/fragment_harftuzilishi" >
+        <action
+            android:id="@+id/action_harftuzilishi_to_sozlarningoqilishiFragment"
+            app:destination="@id/sozlarningoqilishiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hcompleteFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.complete.HcompleteFragment"
+        android:label="fragment_hcomplete"
+        tools:layout="@layout/fragment_hcomplete" >
+        <action
+            android:id="@+id/action_hcompleteFragment_to_sinovFragment"
+            app:destination="@id/sinovFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restartFragment"
+        android:name="com.example.fusha.fragments.RestartFragment"
+        android:label="fragment_restart"
+        tools:layout="@layout/fragment_restart" />
+    <fragment
+        android:id="@+id/sozlarningoqilishiFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.complete.SozlarningoqilishiFragment"
+        android:label="fragment_sozlarningoqilishi"
+        tools:layout="@layout/fragment_sozlarningoqilishi" >
+        <action
+            android:id="@+id/action_sozlarningoqilishiFragment_to_ZAFragment"
+            app:destination="@id/ZAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ZAFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ZAFragment"
+        android:label="fragment_z_a"
+        tools:layout="@layout/fragment_z_a" >
+        <action
+            android:id="@+id/action_ZAFragment_to_mimFragment"
+            app:destination="@id/mimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mimFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.MimFragment"
+        android:label="fragment_mim"
+        tools:layout="@layout/fragment_mim" >
+
+
+        <action
+            android:id="@+id/action_mimFragment_to_TAFragment"
+            app:destination="@id/TAFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TAFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.TAFragment"
+        android:label="fragment_t_a"
+        tools:layout="@layout/fragment_t_a" >
+        <action
+            android:id="@+id/action_TAFragment_to_naFragment"
+            app:destination="@id/naFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/naFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.NaFragment"
+        android:label="fragment_na"
+        tools:layout="@layout/fragment_na" >
+        <action
+            android:id="@+id/action_naFragment_to_yaFragment"
+            app:destination="@id/yaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yaFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.YaFragment"
+        android:label="fragment_ya"
+        tools:layout="@layout/fragment_ya" >
+
+        <action
+            android:id="@+id/action_yaFragment_to_boshlangichTestFragment"
+            app:destination="@id/boshlangichTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.BaFragment"
+        android:label="fragment_ba"
+        tools:layout="@layout/fragment_ba" >
+
+
+        <action
+            android:id="@+id/action_baFragment_to_kaFragment"
+            app:destination="@id/kaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kaFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.KaFragment"
+        android:label="fragment_ka"
+        tools:layout="@layout/fragment_ka" >
+
+        <action
+            android:id="@+id/action_kaFragment_to_lamFragment"
+            app:destination="@id/lamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lamFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.LamFragment"
+        android:label="fragment_lam"
+        tools:layout="@layout/fragment_lam" >
+
+        <action
+            android:id="@+id/action_lamFragment_to_wawFragment"
+            app:destination="@id/wawFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/barakallaFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.BarakallaFragment"
+        android:label="fragment_barakalla"
+        tools:layout="@layout/fragment_barakalla" >
+        <action
+            android:id="@+id/action_barakallaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_barakallaFragment_to_sozlarFragment"
+            app:destination="@id/sozlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wawFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.WawFragment"
+        android:label="fragment_waw"
+        tools:layout="@layout/fragment_waw" >
+        <action
+            android:id="@+id/action_wawFragment_to_ymHaFragment"
+            app:destination="@id/HaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HaFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.HaFragment"
+        android:label="HaFragment"
+        tools:layout="@layout/fragmentha"
+        >
+        <action
+            android:id="@+id/action_ymHaFragment_to_faFragment"
+            app:destination="@id/faFragment" />
+        <action
+            android:id="@+id/action_HaFragment_to_faFragment"
+            app:destination="@id/faFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.FaFragment"
+        android:label="fragment_fa"
+        tools:layout="@layout/fragment_fa" >
+
+
+        <action
+            android:id="@+id/action_faFragment_to_muammoTestFragment"
+            app:destination="@id/muammoTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qoFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.QoFragment"
+        android:label="fragment_qo"
+        tools:layout="@layout/fragment_qo" >
+        <action
+            android:id="@+id/action_qoFragment_to_shiynFragment"
+            app:destination="@id/shiynFragment" />
+        <action
+            android:id="@+id/action_qoFragment_to_darslarFragment"
+            app:destination="@id/darslarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shiynFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ShiynFragment"
+        android:label="fragment_shiyn"
+        tools:layout="@layout/fragment_shiyn" >
+        <action
+            android:id="@+id/action_shiynFragment_to_siynFragment"
+            app:destination="@id/siynFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siynFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.SiynFragment"
+        android:label="SiynFragment"
+        tools:layout="@layout/fragment_siyn"
+        >
+        <action
+            android:id="@+id/action_siynFragment_to_thinFragment"
+            app:destination="@id/thinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thinFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ThinFragment"
+        android:label="fragment_thin"
+        tools:layout="@layout/fragment_thin" >
+        <action
+            android:id="@+id/action_thinFragment_to_sodFragment"
+            app:destination="@id/sodFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/sodFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.SodFragment"
+        android:label="fragment_sod"
+        tools:layout="@layout/fragment_sod" >
+        <action
+            android:id="@+id/action_sodFragment_to_toFragment"
+            app:destination="@id/toFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ToFragment"
+        android:label="fragment_to"
+        tools:layout="@layout/fragment_to" >
+
+        <action
+            android:id="@+id/action_toFragment_to_ortaTestFragment"
+            app:destination="@id/ortaTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jimFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.JimFragment"
+        android:label="fragment_jim"
+        tools:layout="@layout/fragment_jim" >
+        <action
+            android:id="@+id/action_jimFragment_to_xooFragment"
+            app:destination="@id/xooFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xooFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.XooFragment"
+        android:label="fragment_xoo"
+        tools:layout="@layout/fragment_xoo" >
+        <action
+            android:id="@+id/action_xooFragment_to_haaFragment"
+            app:destination="@id/haaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/haaFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.HaaFragment"
+        android:label="fragment_haa"
+        tools:layout="@layout/fragment_haa" >
+
+
+        <action
+            android:id="@+id/action_haaFragment_to_gooFragment"
+            app:destination="@id/gooFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gooFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.GooFragment"
+        android:label="fragment_goo"
+        tools:layout="@layout/fragment_goo" >
+        <action
+            android:id="@+id/action_gooFragment_to_aynFragment"
+            app:destination="@id/aynFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aynFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.AynFragment"
+        android:label="fragment_ayn"
+        tools:layout="@layout/fragment_ayn" >
+        <action
+            android:id="@+id/action_aynFragment_to_dalFragment"
+            app:destination="@id/dalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dalFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.DalFragment"
+        android:label="fragment_dal"
+        tools:layout="@layout/fragment_dal" >
+
+        <action
+            android:id="@+id/action_dalFragment_to_test3Fragment"
+            app:destination="@id/test3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doodFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.DoodFragment"
+        android:label="fragment_dood"
+        tools:layout="@layout/fragment_dood" >
+        <action
+            android:id="@+id/action_doodFragment_to_zaaalFragment"
+            app:destination="@id/zaaalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zaaalFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ZaaalFragment"
+        android:label="fragment_zaaal"
+        tools:layout="@layout/fragment_zaaal" >
+        <action
+            android:id="@+id/action_zaaalFragment_to_zooFragment"
+            app:destination="@id/zooFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zooFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.ZooFragment"
+        android:label="fragment_zoo"
+        tools:layout="@layout/fragment_zoo" >
+        <action
+            android:id="@+id/action_zooFragment_to_barakallaFragment"
+            app:destination="@id/barakallaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/test3Fragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.Test3Fragment"
+        android:label="fragment_test3"
+        tools:layout="@layout/fragment_test3" >
+
+        <action
+            android:id="@+id/action_test3Fragment_to_doodFragment"
+            app:destination="@id/doodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boshlangichTestFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.BoshlangichTestFragment"
+        android:label="fragment_boshlangich_test"
+        tools:layout="@layout/fragment_boshlangich_test" >
+
+        <action
+            android:id="@+id/action_boshlangichTestFragment_to_baFragment"
+            app:destination="@id/baFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaTestFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.OrtaTestFragment"
+        android:label="fragment_orta_test"
+        tools:layout="@layout/fragment_orta_test" >
+
+        <action
+            android:id="@+id/action_ortaTestFragment_to_jimFragment"
+            app:destination="@id/jimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.fusha.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/muammoTestFragment"
+        android:name="com.example.fusha.Darslar_fragment_child.sozlaroqilishi.MuammoTestFragment"
+        android:label="fragment_muammo_test"
+        tools:layout="@layout/fragment_muammo_test" >
+
+        <action
+            android:id="@+id/action_muammoTestFragment_to_qoFragment"
+            app:destination="@id/qoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birFragment"
+        android:name="com.example.fusha.madchild.BirFragment"
+        android:label="fragment_bir"
+        tools:layout="@layout/fragment_bir" >
+        <action
+            android:id="@+id/action_birFragment_to_ikkiFragment"
+            app:destination="@id/ikkiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ikkiFragment"
+        android:name="com.example.fusha.madchild.IkkiFragment"
+        android:label="fragment_ikki"
+        tools:layout="@layout/fragment_ikki" >
+        <action
+            android:id="@+id/action_ikkiFragment_to_uchFragment"
+            app:destination="@id/uchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uchFragment"
+        android:name="com.example.fusha.madchild.UchFragment"
+        android:label="UchFragment"
+        tools:layout="@layout/fragment_uch"
+        />
+
+
+</navigation>

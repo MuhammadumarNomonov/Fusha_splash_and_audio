@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_100">#B2DFDB</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="teal_700">#00796B</color>
+    <color name="purple_700">#9C27B0</color>
+    <color name="correct_option_transparent">#8033CC66</color> <!-- Shaffof yashil -->
+    <color name="wrong_option">#80FF0000</color>              <!-- Shaffof qizil -->
+    <color name="default_option">#FFFFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="teal_200">#03DAC5</color>
+
+</resources>

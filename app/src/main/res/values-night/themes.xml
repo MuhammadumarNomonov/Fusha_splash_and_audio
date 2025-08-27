@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Fusha" parent="Theme.Design.Light.NoActionBar" />
+    <style name="Theme.Fusha" parent="Base.Theme.Fusha" />
+</resources>
