@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="#94D547"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Arabcha misol (RTL) -->
+        <TextView
+            android:id="@+id/tvArabicExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إِنَّ"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textDirection="rtl"/>
+
+        <!-- O'qilishi / izohi -->
+        <TextView
+            android:id="@+id/tvTranslitExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inna — (birinchi sukun tovushi o‘qilmaydi, ikkita n hammasi ikkinchi n sifatida: n‌n)"
+            android:textSize="18sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#424242"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Dars Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFA726">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="Dars ikonkasi"
+                    android:src="@drawable/tashdid_icon" />
+
+                <TextView
+                    android:id="@+id/tvLessonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="2-dars: Tanvin bilan Tashdid"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Asosiy matn -->
+        <TextView
+            android:id="@+id/tvLessonContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#212121"
+            android:text="📘 Tanvin bilan Tashdid (التنوين مع الشدة)\n\n
+Agar tanvin ( ـً / ـٍ / ـٌ ) dan keyin tashdidli harf kelsa, tanvinning «n» tovushi o‘qilmaydi.\n
+➡️ O‘rniga tashdidli harf kuchaytiriladi (ikki marta o‘qiladi).\n\n
+
+🌙 Qur’ondan misollar:\n
+- غَفُورٌ رَّحِيمٌ → G‘ofūrr-Roḥīm\n
+- عَلِيمٌ رَّحِيمٌ → ‘Alīmur-Roḥīm\n
+- سَمِيعٌ بَصِيرٌ → Samī‘un Baṣīr\n
+- عَلِيمٌ حَكِيمٌ → ‘Alīmun Ḥakīm\n\n
+
+✅ Xulosa: Tanvin + Tashdid kelganda, tanvinning «n» tovushi o‘qilmaydi, tashdidli harf kuchaytiriladi." />
+
+        <!-- Tugmalar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7E57C2"
+                android:text="▶️ Darsni tinglash"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7E57C2"
+                android:src="@drawable/keyingi_ic2"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

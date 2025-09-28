@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Header card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#8E24AA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/tashdid_icon"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="3-dars: Sukun + Tashdid (Idghom)"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Qisqacha qoida (faqat TextView scroll) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvRule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:text="Idg’om qoidasi bu ma’lum bir harfni Ikkinchi harf ichiga kirgazib o’qishdir.
+Idg’om bu sukunlik nun (نْ) yoki tanvin (ً) ushbu 6ta harfdan (يَرْمَلُون) biriga yo’liqqan vaqtida ن harfini ana shu harf ichiga kirgazib ن harfi yo‘q bo‘lib, undan keyingi harf esa tashdidli qilib o‘qiladi.
+Masalan: مَنْ يَعْمَل -> مَيّعْمَل
+
+Tanbeh: yozuvda biz tushuntirish uchun yozgandek yozilmaydi, ن harfi yozuvda yoziladi shu ko‘rinishda (مَنْ يَعْمَل), faqat o‘qish vaqtida o‘qilmaydi.
+
+Idg’om harflari 2 qismga bo‘linadi: g‘unnali va g‘unnasiz.
+
+1-qism g‘unnali (ينمو) harflari.
+G‘unna (غُنّة) — tajvid ilmida burun tovushini anglatadi. Bu tovush og‘izdan emas, balki burundan chiqadi va 2 harakat (ya’ni qisqa ikki harf cho‘zimi) davomida eshitiladi.
+
+2-qism g‘unnasiz (ل-ر) harflari. Bu harflar sukunli nun yoki tanvindan keyin kelganda, ularni shu harflar ichiga kirgazib o‘qiladi.
+Misol: مَنْ رَبُّك -> مَرَّبُك
+
+Eslatma: yozuvda مَنْ رَبُّك doim shu ko‘rinishda yoziladi." />
+    </ScrollView>
+
+    <!-- Misol 1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إِنَّ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textDirection="rtl"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inna — bu yerda نْ + نّ qo‘shilib نّ bo‘lib kuchliroq o‘qiladi."
+                android:textSize="17sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#424242"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Misol 2 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="وَحَجَّ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textDirection="rtl"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wa ḥajja — (j sukun + j tashdid birlashib: jj)"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#424242"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Misol 3 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الرَّبَّ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textDirection="rtl"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ar-robba — (b sukun + b tashdid birlashib: bb)"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#424242"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Misol 4 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الصَّبْرُ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textDirection="rtl"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="As-sobru — (ṣ sukun + ṣ tashdid birlashib: ṣṣ)"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:textColor="#424242"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#8E24AA"/>
+</LinearLayout>

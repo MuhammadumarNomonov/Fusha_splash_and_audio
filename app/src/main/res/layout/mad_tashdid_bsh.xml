@@ -1,0 +1,55 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/class1card"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_horizontal"
+    android:backgroundTint="#A2A8EF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Sarlavha -->
+        <TextView
+            android:id="@+id/class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Tashdid"
+            android:layout_marginTop="-5dp"
+            android:textColor="#2E357C"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Tavsif -->
+        <TextView
+            android:id="@+id/class_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/class_title"
+            android:layout_alignStart="@id/class_title"
+            android:layout_marginTop="18dp"
+            android:text="Asosiylar"
+            android:textColor="#C2D9D2"
+            android:textSize="16sp" />
+
+                <!-- Ikonka -->
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/item_bg2"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/tashdid_icon" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
