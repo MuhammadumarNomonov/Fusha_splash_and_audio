@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fusha777"
+    android:background="@drawable/rasim_telga_mos"
     android:padding="24dp">
 
     <LinearLayout
@@ -30,10 +30,11 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:lineSpacingExtra="6dp"
-            android:text=" Assalomu Alaykum✌️\nFusha ilovasiga xush kelibsiz!\n\Bu yerda siz arab tilini bosqichma-bosqich o‘rganasiz — harflardan boshlab, so‘z va jumlalargacha. Ilova sizga Qur’oni karimni to‘g‘ri o‘qish, tushunish va yod olishda yordam beradi.\n\nUshbu ilova butunlay bepul, reklamalarsiz va sizga foyda keltirish maqsadida yaratilgan. Agar sizga yoqsa va kelajakda yana shunday foydali arab tilini o‘zbek tilida o‘rgatuvchi ilovalar chiqishini istasangiz, ixtiyoriy tarzda bizni qo‘llab-quvvatlashingiz mumkin. Sizning har bir yordamingiz biz uchun katta ilhom!"
+            android:text=" Assalomu Alaykum😊\nFusha ilovasiga xush kelibsiz!\n\Bu yerda siz arab tilini bosqichma-bosqich o‘rganasiz — harflardan boshlab, so‘z va jumlalargacha. Ilova sizga Qur’oni karimni to‘g‘ri o‘qish, tushunish va yod olishda yordam beradi.\n\nUshbu ilova butunlay bepul, reklamalarsiz va sizga foyda keltirish maqsadida yaratilgan. Agar sizga yoqsa va kelajakda yana shunday foydali arab tilini o‘zbek tilida o‘rgatuvchi ilovalar chiqishini istasangiz, ixtiyoriy tarzda bizni qo‘llab-quvvatlashingiz mumkin. Sizning har bir yordamingiz biz uchun katta ilhom!"
             android:textAlignment="center"
-            android:textColor="#D3FFFF"
-            android:textSize="19sp" />
+            android:textColor="#BBFBFB"
+            android:textStyle="bold"
+            android:textSize="20sp" />
 
           <Button
               android:layout_width="wrap_content"

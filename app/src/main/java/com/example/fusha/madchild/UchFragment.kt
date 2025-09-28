@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.fusha.R
 import com.example.fusha.databinding.FragmentUchBinding
 
@@ -17,6 +18,11 @@ class UchFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
+        binding.btnNext3.setOnClickListener {
+            findNavController().navigate(R.id.action_uchFragment_to_tortFragment)
+        }
 
 
         binding.btnPlayAudio.setOnClickListener {

@@ -166,6 +166,27 @@
         <action
             android:id="@+id/action_sozlarFragment_to_uchFragment"
             app:destination="@id/uchFragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tortFragment"
+            app:destination="@id/tortFragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_beshFragment"
+            app:destination="@id/beshFragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tashdid1Fragment"
+            app:destination="@id/tashdid1Fragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tashdid2Fragment"
+            app:destination="@id/tashdid2Fragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tashdid3Fragment"
+            app:destination="@id/tashdid3Fragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tashdid4Fragment"
+            app:destination="@id/tashdid4Fragment" />
+        <action
+            android:id="@+id/action_sozlarFragment_to_tashdid5Fragment"
+            app:destination="@id/tashdid5Fragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -575,7 +596,82 @@
         android:name="com.example.fusha.madchild.UchFragment"
         android:label="UchFragment"
         tools:layout="@layout/fragment_uch"
-        />
+        >
+        <action
+            android:id="@+id/action_uchFragment_to_tortFragment"
+            app:destination="@id/tortFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tortFragment"
+        android:name="com.example.fusha.madchild.TortFragment"
+        android:label="TortFragment"
+        tools:layout="@layout/fragment_tort"
+        >
+        <action
+            android:id="@+id/action_tortFragment_to_beshFragment"
+            app:destination="@id/beshFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beshFragment"
+        android:name="com.example.fusha.madchild.BeshFragment"
+        android:label="BeshFragment"
+        tools:layout="@layout/fragment_besh"
+
+        >
+        <action
+            android:id="@+id/action_beshFragment_to_qoshimchaFragment"
+            app:destination="@id/qoshimchaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qoshimchaFragment"
+        android:name="com.example.fusha.madchild.mad_complite.QoshimchaFragment"
+        android:label="fragment_qoshimcha"
+        tools:layout="@layout/fragment_qoshimcha" >
+        <action
+            android:id="@+id/action_qoshimchaFragment_to_tashdid1Fragment"
+            app:destination="@id/tashdid1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tashdid1Fragment"
+        android:name="com.example.fusha.Tashdid.Tashdid1Fragment"
+        android:label="fragment_tashdid1"
+        tools:layout="@layout/fragment_tashdid1" >
+        <action
+            android:id="@+id/action_tashdid1Fragment_to_tashdid2Fragment"
+            app:destination="@id/tashdid2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tashdid2Fragment"
+        android:name="com.example.fusha.Tashdid.Tashdid2Fragment"
+        android:label="fragment_tashdid2"
+        tools:layout="@layout/fragment_tashdid2" >
+        <action
+            android:id="@+id/action_tashdid2Fragment_to_tashdid3Fragment"
+            app:destination="@id/tashdid3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tashdid3Fragment"
+        android:name="com.example.fusha.Tashdid.Tashdid3Fragment"
+        android:label="fragment_tashdid3"
+        tools:layout="@layout/fragment_tashdid3" >
+        <action
+            android:id="@+id/action_tashdid3Fragment_to_tashdid4Fragment"
+            app:destination="@id/tashdid4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tashdid4Fragment"
+        android:name="com.example.fusha.Tashdid.Tashdid4Fragment"
+        android:label="fragment_tashdid4"
+        tools:layout="@layout/fragment_tashdid4" >
+        <action
+            android:id="@+id/action_tashdid4Fragment_to_tashdid5Fragment"
+            app:destination="@id/tashdid5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tashdid5Fragment"
+        android:name="com.example.fusha.Tashdid.Tashdid5Fragment"
+        android:label="fragment_tashdid5"
+        tools:layout="@layout/fragment_tashdid5" />
 
 
 </navigation>

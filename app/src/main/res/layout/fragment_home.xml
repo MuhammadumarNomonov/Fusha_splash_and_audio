@@ -160,7 +160,7 @@
                         android:id="@+id/titleWords"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cho`zish Mad va Qatiy va Vaslali hamza darslari"
+                        android:text=" Mad Va Tashdid darslari"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -316,9 +316,7 @@
                     android:id="@+id/iconRepeat"
                     android:layout_width="40dp"
                     android:layout_height="50dp"
-
-                    android:contentDescription="Qayta eslash"
-                    android:src="@drawable/restart" />
+                    android:src="@drawable/translate" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -331,7 +329,7 @@
                         android:id="@+id/titleRepeat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Qayta eslash"
+                        android:text="Tarjimon"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -339,7 +337,7 @@
                         android:id="@+id/descRepeat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Oldingi darslarni takrorlang"
+                        android:text="O`zbek tilida arab lug`atlarini yod oling"
                         android:textColor="#666666"
                         android:textSize="14sp" />
                 </LinearLayout>

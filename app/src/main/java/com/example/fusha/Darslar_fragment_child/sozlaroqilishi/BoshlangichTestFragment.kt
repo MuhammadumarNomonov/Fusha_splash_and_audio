@@ -32,10 +32,12 @@ class BoshlangichTestFragment : Fragment() {
     private val originalWords = listOf(
         "رُ", "رِ", "رَ", "اُر", "اِر", "اَر",
         "اَمَرْتِ", "مِتْ", "مَتْ", "اُ", "اِ", "اَ",
-        "مَرَرْرنَ",  "نِمْتَ", "زِنْ", "اِنْ", "اَنْ",
-        "تِلْمِيذ","زَهْرٌ", "زَمَنٌ","زَيْتُ","أَيْمُ",
+        "مَرَرْنَا",  "نِمْتَ", "زِنْ", "اِنْ", "اَنْ",
+        "تِلْمِيذٌ","زَهْرٌ", "زَمَنٌ","زَيْتُ","أَيْمُ",
 
     )
+
+
 
     private val availableWords = originalWords.toMutableList()
     private lateinit var currentWord: String
@@ -52,7 +54,7 @@ class BoshlangichTestFragment : Fragment() {
     private fun initTTS() {
         tts = TextToSpeech(requireContext()) { status ->
             if (status == TextToSpeech.SUCCESS) {
-                tts.language = Locale("ar")
+                tts.language = Locale("ar","SA")
                 loadRandomWord()
             }
         }

@@ -4,68 +4,58 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-// import com.example.fusha.databinding.CustomHeader13Binding // <-- COMMENT
-// import com.example.fusha.databinding.CustomHeader29Binding // <-- COMMENT
-import com.example.fusha.databinding.ItemmydataBinding
+import com.example.fusha.databinding.Itemmydata2MadBinding
 import com.example.fusha.databinding.MydataChozishBinding
-// import com.example.fusha.databinding.Itemmydata2Binding // <-- COMMENT
-// import com.example.fusha.databinding.Itemmydata3Binding // <-- COMMENT
-import com.example.fusha.models.Mydata
-
 class Adapter2(
     private val dataList: List<MyData2>,
     private val onItemClick: (MyData2, Int) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
-        private const val TYPE_RED = 0
-        // private const val TYPE_HEADER_13 = 1 // <-- COMMENT
-        // private const val TYPE_PURPLE = 2 // <-- COMMENT
-        // private const val TYPE_HEADER_29 = 3 // <-- COMMENT
-        // private const val TYPE_PINK = 4 // <-- COMMENT
-
-        // private const val HEADER_POSITION_13 = 34 // <-- COMMENT
-        // private const val HEADER_POSITION_29 = 39 // <-- COMMENT
+        private const val TYPE_RED = 0   // Mad darslari
+        private const val TYPE_PINK = 1  // Tashdid darslari
+        private const val MAD_COUNT = 5  // Mad bo‘limi itemlari soni
+        private const val TASHDID_COUNT = 3 // Tashdid bo‘limi itemlari soni
     }
-
-    // inner class Header13ViewHolder(binding: CustomHeader13Binding) : // <-- COMMENT
-    //     RecyclerView.ViewHolder(binding.root) // <-- COMMENT
-
-    // inner class Header29ViewHolder(binding: CustomHeader29Binding) : // <-- COMMENT
-    //     RecyclerView.ViewHolder(binding.root) // <-- COMMENT
 
     inner class GreenViewHolder(val binding: MydataChozishBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: MyData2) {
+        fun bind(item: MyData2, position: Int) {
             binding.lessontitle.text = item.title
+
+            val isFirst = position == 0
+            val isLast = position == MAD_COUNT - 1
+
+            binding.chline.visibility = if (isFirst) View.GONE else View.VISIBLE
+            binding.timeChline.visibility = if (isLast) View.GONE else View.VISIBLE
         }
     }
 
-    // inner class PurpleViewHolder(val binding: Itemmydata2Binding) : // <-- COMMENT
-    //     RecyclerView.ViewHolder(binding.root) { // <-- COMMENT
-    //     fun bind(item: Mydata) { // <-- COMMENT
-    //         binding.lessontitle.text = item.title // <-- COMMENT
-    //     } // <-- COMMENT
-    // } // <-- COMMENT
+    inner class PinkViewHolder(val binding: Itemmydata2MadBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: MyData2, position: Int) {
+            binding.lessontitle.text = item.title
 
-    // inner class PinkViewHolder(val binding: Itemmydata3Binding) : // <-- COMMENT
-    //     RecyclerView.ViewHolder(binding.root) { // <-- COMMENT
-    //     fun bind(item: Mydata) { // <-- COMMENT
-    //         binding.lessontitle.text = item.title // <-- COMMENT
-    //     } // <-- COMMENT
-    // } // <-- COMMENT
+            val relativePos = position - MAD_COUNT
+            val isFirst = relativePos == 0
+            val isLast = relativePos == TASHDID_COUNT - 1
+
+            binding.time2.visibility = if (isFirst) View.GONE else View.VISIBLE
+            binding.timelineLine.visibility = if (isLast) View.GONE else View.VISIBLE
+        }
+    }
 
     override fun getItemCount(): Int = dataList.size
 
     override fun getItemViewType(position: Int): Int {
-        return TYPE_RED // <-- faqat GREEN qolgan
+        return if (position < MAD_COUNT) TYPE_RED else TYPE_PINK
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         return when (viewType) {
             TYPE_RED -> GreenViewHolder(MydataChozishBinding.inflate(inflater, parent, false))
-            // TYPE_PURPLE -> PurpleViewHolder(Itemmydata2Binding.inflate(inflater, parent, false)) // <-- COMMENT
+            TYPE_PINK -> PinkViewHolder(Itemmydata2MadBinding.inflate(inflater, parent, false))
             else -> throw IllegalArgumentException("Unknown view type: $viewType")
         }
     }
@@ -74,20 +64,8 @@ class Adapter2(
         val item = dataList.getOrNull(position) ?: return
 
         when (holder) {
-            is GreenViewHolder -> {
-                holder.bind(item)
-                val isFirst = position == 0
-                val isLast = position == itemCount - 1
-                holder.binding.chline.visibility = if (isFirst) View.GONE else View.VISIBLE
-                holder.binding.timeChline.visibility = if (isLast) View.GONE else View.VISIBLE
-            }
-            // is PurpleViewHolder -> { // <-- COMMENT
-            //     holder.bind(item) // <-- COMMENT
-            //     val isFirst = position == 0 // <-- COMMENT
-            //     val isLast = position == itemCount - 1 // <-- COMMENT
-            //     holder.binding.time2.visibility = if (isFirst) View.GONE else View.VISIBLE // <-- COMMENT
-            //     holder.binding.timelineLine.visibility = if (isLast) View.GONE else View.VISIBLE // <-- COMMENT
-            // } // <-- COMMENT
+            is GreenViewHolder -> holder.bind(item, position)
+            is PinkViewHolder -> holder.bind(item, position)
         }
 
         holder.itemView.setOnClickListener {

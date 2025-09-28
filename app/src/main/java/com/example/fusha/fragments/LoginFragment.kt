@@ -35,8 +35,8 @@ class LoginFragment : Fragment() {
 
             AlertDialog.Builder(requireContext())
                 .setTitle("Meni Qollab quvvatlaganingiz uchun rahmat ")
-                .setMessage("Pul yuborish uchun telefon raqamim:\n$phoneNumber")
-                .setPositiveButton("Kopiya qilish") { _, _ ->
+                .setMessage(" Savol va Takliflar va Ixtiyoriy Yordam Puli yuborish uchun telefon raqamim:\n$phoneNumber")
+                .setPositiveButton("Nusxalash") { _, _ ->
                     val clipboard = requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
                     val clip = ClipData.newPlainText("Phone Number", phoneNumber)
                     clipboard.setPrimaryClip(clip)
